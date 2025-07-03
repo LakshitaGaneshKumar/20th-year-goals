@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/20th-year-vision-board/static/css/main.c8d8a3df.css",
+    "main.js": "/20th-year-vision-board/static/js/main.08b7ecbb.js",
+    "index.html": "/20th-year-vision-board/index.html",
+    "main.c8d8a3df.css.map": "/20th-year-vision-board/static/css/main.c8d8a3df.css.map",
+    "main.08b7ecbb.js.map": "/20th-year-vision-board/static/js/main.08b7ecbb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8d8a3df.css",
+    "static/js/main.08b7ecbb.js"
+  ]
+}
