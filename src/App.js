@@ -1,11 +1,17 @@
-import React from 'react';
-import ExampleComponent from './components/ExampleComponent';
+import "./index.css";
 
 function App() {
     return (
-        <div>
-            <h1>Welcome to My React App</h1>
-            <ExampleComponent />
+        <div className="landing-container">
+            <h1>20th Year Vision Board</h1>
+            <p>
+                I just turned 20, which means the start of a new year and a new decade.
+            <br />
+                These are my goals for the next year...
+            </p>
+            <button className="start-btn">
+                Start
+            </button>
         </div>
     );
 }
