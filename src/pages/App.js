@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import "./index.css";
+import "../index.css";
 import PersonalGoals from "./PersonalGoals";
 
 function LandingPage() {

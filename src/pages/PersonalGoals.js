@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./index.css";
+import "../index.css";
 
 function PersonalGoals() {
   return (
