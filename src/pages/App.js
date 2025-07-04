@@ -17,9 +17,9 @@ function LandingPage() {
     >
       <h1>20th Year Vision Board</h1>
       <p>
-        I just turned 20, which means the start of a new year and a new decade.
+        I just turned 20, which means the start of a
         <br />
-        These are my goals for the next year...
+        new year and a new decade.
       </p>
       <button className="start-btn" onClick={() => navigate("/goals")}>
         Start
