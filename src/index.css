@@ -2,7 +2,13 @@ body {
   margin: 0;
   font-family: monospace;
   background: #000000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* LANDING PAGE STYLES */
 
 .landing-container {
   display: flex;
@@ -40,14 +46,69 @@ body {
   background: #000000;
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 999px;
   cursor: pointer;
   transition: background 0.5s;
 }
 
 .start-btn:hover {
-  background: #ffffff;
-  border: 1px solid #000000;
-  color: #000000;
-  border-radius: 999px;
+  transform: scale(1.15);
+}
+
+/* CATEGORIES OF GROWTH STYLES */
+
+.goals-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10rem 10rem;
+  background: rgba(255,255,255,0.95);
+  border-radius: 100px;
+  margin: auto auto;
+  position: relative;
+}
+
+.goals-page-container h1 {
+  margin-bottom: 5rem;
+  color: #000;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.goal-box {
+  background: #000000;
+  border-radius: 100px;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.goal-box:hover {
+  transform: translateY(-6px) scale(1.15);
+}
+
+.back-arrow {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  background-color: #000;
+  border: none;
+  border-radius: 100px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s;
+}
+.back-arrow:hover {
+  transform: scale(1.25);
 }

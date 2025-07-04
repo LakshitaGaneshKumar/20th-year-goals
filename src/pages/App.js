@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "../index.css";
-import PersonalGoals from "./PersonalGoals";
+import CategoriesOfGrowth from "./CategoriesOfGrowth";
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -16,11 +16,13 @@ function LandingPage() {
     >
       <h1>20th Year Vision Board</h1>
       <p>
-        I just turned 20, which means the start of a new year and a new decade.
+        I just turned 20, which means the start of a 
+        <br />
+        new year and a new decade.
         <br />
         These are my goals for the next year...
       </p>
-      <button className="start-btn" onClick={() => navigate("/personal-goals")}>
+      <button className="start-btn" onClick={() => navigate("/categories-of-growth")}>
         Start
       </button>
     </motion.div>
@@ -40,10 +42,10 @@ function App() {
           }
         />
         <Route
-          path="/personal-goals"
+          path="/categories-of-growth"
           element={
             <AnimatePresence mode="wait">
-              <PersonalGoals />
+              <CategoriesOfGrowth />
             </AnimatePresence>
           }
         />
