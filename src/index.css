@@ -62,7 +62,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 10rem 10rem;
+  padding: 5rem 5rem;
+  max-width: 80vw;
   background: rgba(255,255,255,0.95);
   border-radius: 50px;
   margin: auto auto;

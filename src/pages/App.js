@@ -15,11 +15,9 @@ function LandingPage() {
       exit={{ opacity: 0, y: -40 }}
       transition={{ duration: 0.5 }}
     >
-      <h1>20th Year Vision Board</h1>
+      <h1>20th Year Goals</h1>
       <p>
-        I just turned 20, which means the start of a
-        <br />
-        new year and a new decade.
+        A new year and a new decade.
       </p>
       <button className="start-btn" onClick={() => navigate("/goals")}>
         Start
@@ -30,7 +28,7 @@ function LandingPage() {
 
 function App() {
   return (
-    <Router basename="/20th-year-vision-board">
+    <Router basename="/20th-year-goals">
       <Routes>
         <Route
           path="/"
