@@ -12,9 +12,13 @@ const goals = [
   "Physical",
 ];
 
-function CategoriesOfGrowth() {
+function Goals() {
 
   const navigate = useNavigate();
+
+  // Helper to create a URL-friendly path
+  const toPath = (goal) =>
+    `/goals/${goal.toLowerCase().replace(/\s+/g, "-")}`;
 
   return (
     <motion.div
@@ -27,7 +31,7 @@ function CategoriesOfGrowth() {
       <button
         className="back-arrow"
         onClick={() => navigate("/")}
-        aria-label="Back to landing"
+        aria-label="Back to landing page"
       >
         &#8592;
       </button>
@@ -36,7 +40,17 @@ function CategoriesOfGrowth() {
 
       <div className="goals-grid">
         {goals.map((goal) => (
-          <div className="goal-box" key={goal}>
+          <div className="goal-box" key={goal}
+            onClick={() => navigate(toPath(goal))}
+            role="button"
+            tabIndex={0}
+            onKeyPress={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                navigate(toPath(goal));
+              }
+            }}
+            aria-label={`View goals for ${goal}`}
+          >
             {goal}
           </div>
         ))}
@@ -47,4 +61,4 @@ function CategoriesOfGrowth() {
   );
 }
 
-export default CategoriesOfGrowth;
+export default Goals;
