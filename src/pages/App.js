@@ -28,7 +28,7 @@ function LandingPage() {
 
 function App() {
   return (
-    <Router basename="/20th-year-goals">
+    <Router basename="/20th-year-vision-board">
       <Routes>
         <Route
           path="/"

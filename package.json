@@ -26,7 +26,7 @@
     "react-router-dom": "^7.6.3",
     "react-scripts": "^5.0.1"
   },
-  "homepage": "http://lakshitaganeshkumar.github.io/20th-year-vision-board",
+  "homepage": "http://localhost:3000/20th-year-vision-board",
   "browserslist": {
     "production": [
       ">0.2%",
